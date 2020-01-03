@@ -1,0 +1,29 @@
+function RTW_rtwnameSIDMap() {
+	this.rtwnameHashMap = new Array();
+	this.sidHashMap = new Array();
+	this.rtwnameHashMap["<Root>"] = {sid: "STM32_FIR_test_script_sym"};
+	this.sidHashMap["STM32_FIR_test_script_sym"] = {rtwname: "<Root>"};
+	this.rtwnameHashMap["<S1>"] = {sid: "STM32_FIR_test_script_sym:45"};
+	this.sidHashMap["STM32_FIR_test_script_sym:45"] = {rtwname: "<S1>"};
+	this.rtwnameHashMap["<Root>/Audio Input"] = {sid: "STM32_FIR_test_script_sym:17"};
+	this.sidHashMap["STM32_FIR_test_script_sym:17"] = {rtwname: "<Root>/Audio Input"};
+	this.rtwnameHashMap["<Root>/Audio Output"] = {sid: "STM32_FIR_test_script_sym:6"};
+	this.sidHashMap["STM32_FIR_test_script_sym:6"] = {rtwname: "<Root>/Audio Output"};
+	this.rtwnameHashMap["<Root>/Gain"] = {sid: "STM32_FIR_test_script_sym:41"};
+	this.sidHashMap["STM32_FIR_test_script_sym:41"] = {rtwname: "<Root>/Gain"};
+	this.rtwnameHashMap["<Root>/MATLAB Function"] = {sid: "STM32_FIR_test_script_sym:45"};
+	this.sidHashMap["STM32_FIR_test_script_sym:45"] = {rtwname: "<Root>/MATLAB Function"};
+	this.rtwnameHashMap["<Root>/Matrix Concatenate"] = {sid: "STM32_FIR_test_script_sym:8"};
+	this.sidHashMap["STM32_FIR_test_script_sym:8"] = {rtwname: "<Root>/Matrix Concatenate"};
+	this.rtwnameHashMap["<Root>/Memory"] = {sid: "STM32_FIR_test_script_sym:46"};
+	this.sidHashMap["STM32_FIR_test_script_sym:46"] = {rtwname: "<Root>/Memory"};
+	this.rtwnameHashMap["<Root>/Selector"] = {sid: "STM32_FIR_test_script_sym:19"};
+	this.sidHashMap["STM32_FIR_test_script_sym:19"] = {rtwname: "<Root>/Selector"};
+	this.rtwnameHashMap["<Root>/Selector1"] = {sid: "STM32_FIR_test_script_sym:38"};
+	this.sidHashMap["STM32_FIR_test_script_sym:38"] = {rtwname: "<Root>/Selector1"};
+	this.rtwnameHashMap["<S1>:1"] = {sid: "STM32_FIR_test_script_sym:45:1"};
+	this.sidHashMap["STM32_FIR_test_script_sym:45:1"] = {rtwname: "<S1>:1"};
+	this.getSID = function(rtwname) { return this.rtwnameHashMap[rtwname];}
+	this.getRtwname = function(sid) { return this.sidHashMap[sid];}
+}
+RTW_rtwnameSIDMap.instance = new RTW_rtwnameSIDMap();

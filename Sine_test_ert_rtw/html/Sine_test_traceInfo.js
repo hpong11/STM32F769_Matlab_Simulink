@@ -1,0 +1,29 @@
+function RTW_rtwnameSIDMap() {
+	this.rtwnameHashMap = new Array();
+	this.sidHashMap = new Array();
+	this.rtwnameHashMap["<Root>"] = {sid: "Sine_test"};
+	this.sidHashMap["Sine_test"] = {rtwname: "<Root>"};
+	this.rtwnameHashMap["<Root>/Audio Input"] = {sid: "Sine_test:17"};
+	this.sidHashMap["Sine_test:17"] = {rtwname: "<Root>/Audio Input"};
+	this.rtwnameHashMap["<Root>/Audio Output"] = {sid: "Sine_test:6"};
+	this.sidHashMap["Sine_test:6"] = {rtwname: "<Root>/Audio Output"};
+	this.rtwnameHashMap["<Root>/Data Type Conversion"] = {sid: "Sine_test:5"};
+	this.sidHashMap["Sine_test:5"] = {rtwname: "<Root>/Data Type Conversion"};
+	this.rtwnameHashMap["<Root>/Display1"] = {sid: "Sine_test:35"};
+	this.sidHashMap["Sine_test:35"] = {rtwname: "<Root>/Display1"};
+	this.rtwnameHashMap["<Root>/Display2"] = {sid: "Sine_test:37"};
+	this.sidHashMap["Sine_test:37"] = {rtwname: "<Root>/Display2"};
+	this.rtwnameHashMap["<Root>/Matrix Concatenate"] = {sid: "Sine_test:8"};
+	this.sidHashMap["Sine_test:8"] = {rtwname: "<Root>/Matrix Concatenate"};
+	this.rtwnameHashMap["<Root>/MinMax"] = {sid: "Sine_test:34"};
+	this.sidHashMap["Sine_test:34"] = {rtwname: "<Root>/MinMax"};
+	this.rtwnameHashMap["<Root>/MinMax1"] = {sid: "Sine_test:38"};
+	this.sidHashMap["Sine_test:38"] = {rtwname: "<Root>/MinMax1"};
+	this.rtwnameHashMap["<Root>/Selector"] = {sid: "Sine_test:19"};
+	this.sidHashMap["Sine_test:19"] = {rtwname: "<Root>/Selector"};
+	this.rtwnameHashMap["<Root>/Sine Wave"] = {sid: "Sine_test:1"};
+	this.sidHashMap["Sine_test:1"] = {rtwname: "<Root>/Sine Wave"};
+	this.getSID = function(rtwname) { return this.rtwnameHashMap[rtwname];}
+	this.getRtwname = function(sid) { return this.sidHashMap[sid];}
+}
+RTW_rtwnameSIDMap.instance = new RTW_rtwnameSIDMap();

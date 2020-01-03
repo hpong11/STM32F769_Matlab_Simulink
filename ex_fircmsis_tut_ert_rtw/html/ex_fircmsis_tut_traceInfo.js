@@ -1,0 +1,31 @@
+function RTW_rtwnameSIDMap() {
+	this.rtwnameHashMap = new Array();
+	this.sidHashMap = new Array();
+	this.rtwnameHashMap["<Root>"] = {sid: "ex_fircmsis_tut"};
+	this.sidHashMap["ex_fircmsis_tut"] = {rtwname: "<Root>"};
+	this.rtwnameHashMap["<S1>"] = {sid: "ex_fircmsis_tut:1"};
+	this.sidHashMap["ex_fircmsis_tut:1"] = {rtwname: "<S1>"};
+	this.rtwnameHashMap["<Root>/FIR"] = {sid: "ex_fircmsis_tut:1"};
+	this.sidHashMap["ex_fircmsis_tut:1"] = {rtwname: "<Root>/FIR"};
+	this.rtwnameHashMap["<Root>/Matrix Concatenate"] = {sid: "ex_fircmsis_tut:5"};
+	this.sidHashMap["ex_fircmsis_tut:5"] = {rtwname: "<Root>/Matrix Concatenate"};
+	this.rtwnameHashMap["<Root>/Random Source"] = {sid: "ex_fircmsis_tut:6"};
+	this.sidHashMap["ex_fircmsis_tut:6"] = {rtwname: "<Root>/Random Source"};
+	this.rtwnameHashMap["<Root>/Sine Wave"] = {sid: "ex_fircmsis_tut:7"};
+	this.sidHashMap["ex_fircmsis_tut:7"] = {rtwname: "<Root>/Sine Wave"};
+	this.rtwnameHashMap["<Root>/Sine Wave1"] = {sid: "ex_fircmsis_tut:8"};
+	this.sidHashMap["ex_fircmsis_tut:8"] = {rtwname: "<Root>/Sine Wave1"};
+	this.rtwnameHashMap["<Root>/Spectrum Analyzer"] = {sid: "ex_fircmsis_tut:9"};
+	this.sidHashMap["ex_fircmsis_tut:9"] = {rtwname: "<Root>/Spectrum Analyzer"};
+	this.rtwnameHashMap["<Root>/Sum1"] = {sid: "ex_fircmsis_tut:10"};
+	this.sidHashMap["ex_fircmsis_tut:10"] = {rtwname: "<Root>/Sum1"};
+	this.rtwnameHashMap["<S1>/In1"] = {sid: "ex_fircmsis_tut:2"};
+	this.sidHashMap["ex_fircmsis_tut:2"] = {rtwname: "<S1>/In1"};
+	this.rtwnameHashMap["<S1>/Discrete FIR Filter"] = {sid: "ex_fircmsis_tut:3"};
+	this.sidHashMap["ex_fircmsis_tut:3"] = {rtwname: "<S1>/Discrete FIR Filter"};
+	this.rtwnameHashMap["<S1>/Out1"] = {sid: "ex_fircmsis_tut:4"};
+	this.sidHashMap["ex_fircmsis_tut:4"] = {rtwname: "<S1>/Out1"};
+	this.getSID = function(rtwname) { return this.rtwnameHashMap[rtwname];}
+	this.getRtwname = function(sid) { return this.sidHashMap[sid];}
+}
+RTW_rtwnameSIDMap.instance = new RTW_rtwnameSIDMap();

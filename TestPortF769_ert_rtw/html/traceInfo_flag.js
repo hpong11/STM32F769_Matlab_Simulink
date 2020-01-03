@@ -1,0 +1,49 @@
+function TraceInfoFlag() {
+    this.traceFlag = new Array();
+    this.traceFlag["TestPortF769.c:89c52"]=1;
+    this.traceFlag["TestPortF769.c:97c73"]=1;
+    this.traceFlag["TestPortF769.c:163c35"]=1;
+    this.traceFlag["TestPortF769.c:166c35"]=1;
+    this.traceFlag["TestPortF769.c:169c35"]=1;
+}
+top.TraceInfoFlag.instance = new TraceInfoFlag();
+function TraceInfoLineFlag() {
+    this.lineTraceFlag = new Array();
+    this.lineTraceFlag["TestPortF769.c:89"]=1;
+    this.lineTraceFlag["TestPortF769.c:94"]=1;
+    this.lineTraceFlag["TestPortF769.c:97"]=1;
+    this.lineTraceFlag["TestPortF769.c:100"]=1;
+    this.lineTraceFlag["TestPortF769.c:121"]=1;
+    this.lineTraceFlag["TestPortF769.c:122"]=1;
+    this.lineTraceFlag["TestPortF769.c:123"]=1;
+    this.lineTraceFlag["TestPortF769.c:124"]=1;
+    this.lineTraceFlag["TestPortF769.c:125"]=1;
+    this.lineTraceFlag["TestPortF769.c:126"]=1;
+    this.lineTraceFlag["TestPortF769.c:127"]=1;
+    this.lineTraceFlag["TestPortF769.c:128"]=1;
+    this.lineTraceFlag["TestPortF769.c:129"]=1;
+    this.lineTraceFlag["TestPortF769.c:132"]=1;
+    this.lineTraceFlag["TestPortF769.c:133"]=1;
+    this.lineTraceFlag["TestPortF769.c:134"]=1;
+    this.lineTraceFlag["TestPortF769.c:135"]=1;
+    this.lineTraceFlag["TestPortF769.c:136"]=1;
+    this.lineTraceFlag["TestPortF769.c:137"]=1;
+    this.lineTraceFlag["TestPortF769.c:138"]=1;
+    this.lineTraceFlag["TestPortF769.c:139"]=1;
+    this.lineTraceFlag["TestPortF769.c:140"]=1;
+    this.lineTraceFlag["TestPortF769.c:143"]=1;
+    this.lineTraceFlag["TestPortF769.c:144"]=1;
+    this.lineTraceFlag["TestPortF769.c:145"]=1;
+    this.lineTraceFlag["TestPortF769.c:146"]=1;
+    this.lineTraceFlag["TestPortF769.c:147"]=1;
+    this.lineTraceFlag["TestPortF769.c:148"]=1;
+    this.lineTraceFlag["TestPortF769.c:149"]=1;
+    this.lineTraceFlag["TestPortF769.c:150"]=1;
+    this.lineTraceFlag["TestPortF769.c:151"]=1;
+    this.lineTraceFlag["TestPortF769.c:154"]=1;
+    this.lineTraceFlag["TestPortF769.c:155"]=1;
+    this.lineTraceFlag["TestPortF769.c:163"]=1;
+    this.lineTraceFlag["TestPortF769.c:166"]=1;
+    this.lineTraceFlag["TestPortF769.c:169"]=1;
+}
+top.TraceInfoLineFlag.instance = new TraceInfoLineFlag();

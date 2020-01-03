@@ -1,0 +1,8 @@
+wm8994.o: \
+ C:/ProgramData/MATLAB/SupportPackages/R2018b/toolbox/target/supportpackages/stm32f769idiscovery/src/wm8994.c \
+ C:/PROGRA~3/MATLAB/SUPPOR~1/R2018b/toolbox/target/SUPPOR~1/STM32F~2/include/wm8994.h \
+ C:/PROGRA~3/MATLAB/SUPPOR~1/R2018b/toolbox/target/SUPPOR~1/STM32F~2/include/audio.h
+
+C:/PROGRA~3/MATLAB/SUPPOR~1/R2018b/toolbox/target/SUPPOR~1/STM32F~2/include/wm8994.h:
+
+C:/PROGRA~3/MATLAB/SUPPOR~1/R2018b/toolbox/target/SUPPOR~1/STM32F~2/include/audio.h:

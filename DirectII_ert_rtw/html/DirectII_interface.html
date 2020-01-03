@@ -1,0 +1,621 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="rtwreport.css" /><script language="JavaScript" type="text/javascript">function rtwTableShrink(o) {var t = o.nextSibling;if (t.nodeType != 1) {t = t.nextSibling;}if (t.style.display == "none") {t.style.display = "";o.innerHTML = "[-]"} else {t.style.display = "none";o.innerHTML = "[+] ... "}}</script><script language="JavaScript" type="text/javascript" src="rtwreport_utils.js"></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>
+Code Interface Report for DirectII
+</title>
+
+</head>
+<body ONLOAD="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdCodeInterface'); else local_onload();}} catch(err) {};">
+<h1>
+Code Interface Report for DirectII
+</h1>
+<h3>
+Table of Contents
+</h3>
+<ul>
+<li>
+<a href="#sec_Entry-Point_Functions">
+Entry-Point Functions
+</a>
+
+</li>
+<li>
+<a href="#sec_Inports">
+Inports
+</a>
+
+</li>
+<li>
+<a href="#sec_Outports">
+Outports
+</a>
+
+</li>
+<li>
+<a href="#sec_Interface_Parameters">
+Interface Parameters
+</a>
+
+</li>
+<li>
+<a href="#sec_Data_Stores">
+Data Stores
+</a>
+
+</li>
+
+</ul>
+<h3>
+<a name="sec_Entry-Point_Functions">
+Entry-Point Functions
+</a>
+
+</h3>
+<p>
+Function: <a href="DirectII_c.html#fcn_DirectII_initialize">DirectII_initialize</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void DirectII_initialize(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Initialization entry point of generated code
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called exactly once
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href="DirectII_h.html">DirectII.h</a>
+</td>
+
+</tr>
+
+</table>
+<p>
+Function: <a href="DirectII_c.html#fcn_DirectII_step">DirectII_step</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void DirectII_step(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Output entry point of generated code
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called periodically, every 0.256 seconds
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href="DirectII_h.html">DirectII.h</a>
+</td>
+
+</tr>
+
+</table>
+<p>
+Function: <a href="DirectII_c.html#fcn_DirectII_terminate">DirectII_terminate</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void DirectII_terminate(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Termination entry point of generated code
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called exactly once
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href="DirectII_h.html">DirectII.h</a>
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Inports">
+Inports
+</a>
+
+</h3>
+<p>
+No Inports in model.
+</p>
+<h3>
+<a name="sec_Outports">
+Outports
+</a>
+
+</h3>
+<span title="Click to shrink or expand table" onclick="rtwTableShrink(this)">[-]</span><table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+Block Name
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+Code Identifier
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+Dimension
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('DirectII:22')" name="code2model" class="code2model">&lt;Root&gt;/Out1</a>
+</td>
+<td width="26%" align="left" valign="top">
+DirectII_Y.Out1
+</td>
+<td width="21%" align="left" valign="top">
+int16_T
+</td>
+<td width="10%" align="right" valign="top">
+[4096]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('DirectII:23')" name="code2model" class="code2model">&lt;Root&gt;/Out2</a>
+</td>
+<td width="26%" align="left" valign="top">
+DirectII_Y.Out2
+</td>
+<td width="21%" align="left" valign="top">
+int16_T
+</td>
+<td width="10%" align="right" valign="top">
+[4096]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('DirectII:24')" name="code2model" class="code2model">&lt;Root&gt;/Out3</a>
+</td>
+<td width="26%" align="left" valign="top">
+DirectII_Y.Out3
+</td>
+<td width="21%" align="left" valign="top">
+int16_T
+</td>
+<td width="10%" align="right" valign="top">
+[4096]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('DirectII:25')" name="code2model" class="code2model">&lt;Root&gt;/Out4</a>
+</td>
+<td width="26%" align="left" valign="top">
+DirectII_Y.Out4
+</td>
+<td width="21%" align="left" valign="top">
+int16_T
+</td>
+<td width="10%" align="right" valign="top">
+[4096]
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Interface_Parameters">
+Interface Parameters
+</a>
+
+</h3>
+<span title="Click to shrink or expand table" onclick="rtwTableShrink(this)">[-]</span><table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+Parameter Source
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+Code Identifier
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+Dimension
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('DirectII:4')" name="code2model" class="code2model">&lt;Root&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+DirectII_P.Gain_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('DirectII:56')" name="code2model" class="code2model">&lt;S2&gt;/Alpha LP</a>
+</td>
+<td width="26%" align="left" valign="top">
+DirectII_P.AlphaLP_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('DirectII:58')" name="code2model" class="code2model">&lt;S2&gt;/Beta LP</a>
+</td>
+<td width="26%" align="left" valign="top">
+DirectII_P.BetaLP_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('DirectII:59')" name="code2model" class="code2model">&lt;S2&gt;/Alpha HP</a>
+</td>
+<td width="26%" align="left" valign="top">
+DirectII_P.AlphaHP_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('DirectII:60')" name="code2model" class="code2model">&lt;S2&gt;/Beta HP</a>
+</td>
+<td width="26%" align="left" valign="top">
+DirectII_P.BetaHP_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('DirectII:61')" name="code2model" class="code2model">&lt;S2&gt;/Alpha BP</a>
+</td>
+<td width="26%" align="left" valign="top">
+DirectII_P.AlphaBP_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('DirectII:62')" name="code2model" class="code2model">&lt;S2&gt;/Beta BP</a>
+</td>
+<td width="26%" align="left" valign="top">
+DirectII_P.BetaBP_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('DirectII:63')" name="code2model" class="code2model">&lt;S2&gt;/Alpha BS</a>
+</td>
+<td width="26%" align="left" valign="top">
+DirectII_P.AlphaBS_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('DirectII:64')" name="code2model" class="code2model">&lt;S2&gt;/Beta BS</a>
+</td>
+<td width="26%" align="left" valign="top">
+DirectII_P.BetaBS_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('DirectII:10')" name="code2model" class="code2model">&lt;Root&gt;/Memory1</a>
+</td>
+<td width="26%" align="left" valign="top">
+DirectII_P.Memory1_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[4  2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('DirectII:6')" name="code2model" class="code2model">&lt;Root&gt;/Gain1</a>
+</td>
+<td width="26%" align="left" valign="top">
+DirectII_P.Gain1_Gain
+</td>
+<td width="21%" align="left" valign="top">
+int16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('DirectII:13')" name="code2model" class="code2model">&lt;Root&gt;/Gain2</a>
+</td>
+<td width="26%" align="left" valign="top">
+DirectII_P.Gain2_Gain
+</td>
+<td width="21%" align="left" valign="top">
+int16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('DirectII:54')" name="code2model" class="code2model">&lt;Root&gt;/Gain4</a>
+</td>
+<td width="26%" align="left" valign="top">
+DirectII_P.Gain4_Gain
+</td>
+<td width="21%" align="left" valign="top">
+int16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('DirectII:27')" name="code2model" class="code2model">&lt;Root&gt;/Gain3</a>
+</td>
+<td width="26%" align="left" valign="top">
+DirectII_P.Gain3_Gain
+</td>
+<td width="21%" align="left" valign="top">
+int16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('DirectII:32')" name="code2model" class="code2model">&lt;Root&gt;/selector</a>
+</td>
+<td width="26%" align="left" valign="top">
+DirectII_P.selector_Value
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Data_Stores">
+Data Stores
+</a>
+
+</h3>
+<p>
+No data stores in the model; note that this report lists only data stores with non-auto storage class and global data stores
+</p>
+
+</body>
+
+</html>

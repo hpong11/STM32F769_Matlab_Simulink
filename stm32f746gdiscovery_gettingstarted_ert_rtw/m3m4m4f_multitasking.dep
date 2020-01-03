@@ -1,0 +1,8 @@
+m3m4m4f_multitasking.o: \
+ C:/ProgramData/MATLAB/SupportPackages/R2017b/toolbox/target/supportpackages/armcortexmbase/scheduler/src/m3m4m4f_multitasking.c \
+ C:/ProgramData/MATLAB/SupportPackages/R2017b/toolbox/target/supportpackages/armcortexmbase/scheduler/include/mw_force_no_optimization.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2017b/toolbox/target/supportpackages/armcortexmbase/scheduler/include/arm_cortex_m_multitasking.h
+
+C:/ProgramData/MATLAB/SupportPackages/R2017b/toolbox/target/supportpackages/armcortexmbase/scheduler/include/mw_force_no_optimization.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2017b/toolbox/target/supportpackages/armcortexmbase/scheduler/include/arm_cortex_m_multitasking.h:

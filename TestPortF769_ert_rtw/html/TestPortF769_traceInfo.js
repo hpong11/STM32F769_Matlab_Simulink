@@ -1,0 +1,33 @@
+function RTW_rtwnameSIDMap() {
+	this.rtwnameHashMap = new Array();
+	this.sidHashMap = new Array();
+	this.rtwnameHashMap["<Root>"] = {sid: "TestPortF769"};
+	this.sidHashMap["TestPortF769"] = {rtwname: "<Root>"};
+	this.rtwnameHashMap["<S1>"] = {sid: "TestPortF769:9"};
+	this.sidHashMap["TestPortF769:9"] = {rtwname: "<S1>"};
+	this.rtwnameHashMap["<S2>"] = {sid: "TestPortF769:11"};
+	this.sidHashMap["TestPortF769:11"] = {rtwname: "<S2>"};
+	this.rtwnameHashMap["<Root>/Audio Input"] = {sid: "TestPortF769:3"};
+	this.sidHashMap["TestPortF769:3"] = {rtwname: "<Root>/Audio Input"};
+	this.rtwnameHashMap["<Root>/Digital Write"] = {sid: "TestPortF769:1"};
+	this.sidHashMap["TestPortF769:1"] = {rtwname: "<Root>/Digital Write"};
+	this.rtwnameHashMap["<Root>/Digital Write1"] = {sid: "TestPortF769:2"};
+	this.sidHashMap["TestPortF769:2"] = {rtwname: "<Root>/Digital Write1"};
+	this.rtwnameHashMap["<Root>/MATLAB Function"] = {sid: "TestPortF769:9"};
+	this.sidHashMap["TestPortF769:9"] = {rtwname: "<Root>/MATLAB Function"};
+	this.rtwnameHashMap["<Root>/MATLAB Function1"] = {sid: "TestPortF769:11"};
+	this.sidHashMap["TestPortF769:11"] = {rtwname: "<Root>/MATLAB Function1"};
+	this.rtwnameHashMap["<Root>/Memory"] = {sid: "TestPortF769:10"};
+	this.sidHashMap["TestPortF769:10"] = {rtwname: "<Root>/Memory"};
+	this.rtwnameHashMap["<Root>/Memory1"] = {sid: "TestPortF769:12"};
+	this.sidHashMap["TestPortF769:12"] = {rtwname: "<Root>/Memory1"};
+	this.rtwnameHashMap["<Root>/SCI Write"] = {sid: "TestPortF769:4"};
+	this.sidHashMap["TestPortF769:4"] = {rtwname: "<Root>/SCI Write"};
+	this.rtwnameHashMap["<S1>:1"] = {sid: "TestPortF769:9:1"};
+	this.sidHashMap["TestPortF769:9:1"] = {rtwname: "<S1>:1"};
+	this.rtwnameHashMap["<S2>:1"] = {sid: "TestPortF769:11:1"};
+	this.sidHashMap["TestPortF769:11:1"] = {rtwname: "<S2>:1"};
+	this.getSID = function(rtwname) { return this.rtwnameHashMap[rtwname];}
+	this.getRtwname = function(sid) { return this.sidHashMap[sid];}
+}
+RTW_rtwnameSIDMap.instance = new RTW_rtwnameSIDMap();
